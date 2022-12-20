@@ -496,6 +496,7 @@ MEDIA QUERIES
             display: flex;
             text-align: center;
             margin-bottom: 32px;
+            margin-left: 15px;
             
         }
         .width-movie {
