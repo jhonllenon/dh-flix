@@ -503,7 +503,7 @@ MEDIA QUERIES
             text-align: center; 
         }
         .container .card .image-movie {
-        width: 350px;
+        width: 375px;
         height: 510px;
         object-fit: cover;
         border-radius: 12px;
@@ -517,7 +517,7 @@ MEDIA QUERIES
         border-top-left-radius: 12px;
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
-        width: 350px;
+        width: 375px;
         height: 270px;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -526,7 +526,7 @@ MEDIA QUERIES
         }
         .card .content-description .btn-movie  {
             display: flex;
-            width: 200px;
+            width: 250px;
             height: 60px;
             margin: 0 auto;
             border-radius: 12px;
