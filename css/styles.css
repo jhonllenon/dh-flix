@@ -502,4 +502,36 @@ MEDIA QUERIES
             width: 300px;
             text-align: center; 
         }
+        .container .card .image-movie {
+        width: 300px;
+        height: 510px;
+        object-fit: cover;
+        border-radius: 12px;
+        }
+        .content-description {
+        display: flex;
+        position: absolute;
+        background: #F4F4F4;
+        bottom: 0;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        width: 300px;
+        height: 270px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        object-fit: contain;
+        flex-direction: column
+        }
+        .card .content-description .btn-movie  {
+            display: flex;
+            width: 200px;
+            height: 60px;
+            margin: 0 auto;
+            border-radius: 12px;
+            background: #33BB69;
+            margin-bottom: 0px;
+        
+        }
 }
