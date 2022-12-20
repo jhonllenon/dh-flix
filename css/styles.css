@@ -503,7 +503,7 @@ MEDIA QUERIES
             text-align: center; 
         }
         .container .card .image-movie {
-        width: 300px;
+        width: 350px;
         height: 510px;
         object-fit: cover;
         border-radius: 12px;
@@ -517,7 +517,7 @@ MEDIA QUERIES
         border-top-left-radius: 12px;
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
-        width: 300px;
+        width: 350px;
         height: 270px;
         text-overflow: ellipsis;
         overflow: hidden;
