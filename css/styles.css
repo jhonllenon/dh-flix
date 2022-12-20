@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+/****************
+Estilos do header
+****************/
+
+.header {
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    height: 80px;
+    align-items: center;
+    position:sticky;
+    top: 0.1px;
+    z-index: 1;
+}
+.header .menu {
+    display:flex;
+    gap: 12px;
+    list-style: none;
+    cursor: pointer;
+}
+.menu-hamburguer {
+    display: none;
+}
+.menu li a:hover{
+    color: red;
+    transition: all ease-out 0,3s;
+}
+.menu li a:active{
+    color: blue;
+}
+
+.menu li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #626262;;
+}
+.menu li .home-as-visited {
+    color:  #E51B3E ;
+}
+/*********************************
+    CHAMA ITENS DO MENU HAMBURGUER
+*********************************/
+
+/****
+HOME
+*****/
+.home {
+    background-image: url('../pictures/picture-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    
+    
+}
+.home .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    
+}
+
+h1 {
+    align-self: flex-start;
+    color: #e51b3e;
+    font-size: 72px;
+    margin-bottom: 0;
+}
+p {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.btn {
+    display: flex;
+    margin-top: 30px;
+    width: 322px;
+    height: 70px;
+    border: 1px solid #33BB69;
+    border-radius: 12px;
+    background: rgba(51, 187, 105, 0.05);
+}
+.content .btn:hover {
+    background-color: rgba(51, 187, 105, 0.2);
+}
+
+.btn .text-button {
+    align-self: center;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 24px; 
+}
+
+/************
+Itens Section
+************/
+
+.itens h2 {
+    text-align: center;
+    font-size: 60px;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.container .card {
+    position: relative;
+    width: 407px;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+   
+   
+}
+
+.container .card .image-movie {
+    width: 407px;
+    height: 510px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.card .content-description {
+    display: flex;
+    position: absolute;
+    background: #F4F4F4;
+    bottom: 0;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+    height: 270px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    object-fit: contain;
+    flex-direction: column;
+   
+}
+
+h3 {
+    margin: 26px auto 13px 32px;
+    font-size: 24px;
+}
+
+.card .content-description .description {
+    margin-left: 32px;
+    text-align: start;
+    color: #000000;
+    font-size: 18px;
+    padding: 10px;
+    text-overflow: clip;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.card .content-description .btn-movie {
+    display: flex;
+    width: 340px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 12px;
+    background: #33BB69;
+    margin-bottom: 0px;
+
+}
+.card .btn-movie:hover {
+    background-color: rgb(19, 214, 19);
+    transition: all ease-in-out 0,3s;
+    
+}
+.card .btn-movie .anchor-button {
+    align-self: center;
+    margin: 0 auto;
+    font-size: 24px;
+    color: #ffffff ;
+}
+
+
+
+/******************
+footer informações
+*****************/
+
+footer {
+   display: flex;
+    margin-top: 40px;
+    background: #171717;
+    height: 360px;
+}
+.content-info {
+    display: flex;
+    margin: 0 auto;
+
+}
+.content-info .info {
+    display: flex;
+    flex-direction: column;
+}
+.content-info .info .photo-info {
+    display: flex;
+    align-self: center;
+    gap: 16px;
+   
+}
+.content-info .info .img-info {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 80px;
+}
+h4 {
+    align-self: center;
+    color: #ffffff;
+    font-weight:400;
+    font-size: 24px;
+    margin-top: 80px;
+    margin-bottom: 16px;
+}
+h5 {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 400;
+    
+}
+span {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 12px;
+    align-self: center;
+}
+
+/*****************
+ESTILOS DO FORM
+*****************/
+.container-form {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 650px;
+    min-height: 630px;
+    background: #ffffff;
+    border-radius:12px;
+    
+    
+}
+
+.container-form .img-form {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+.container-form .getout {
+    display: flex;
+    position: absolute;
+    top: 16px;
+    right: 32px;
+    
+}
+.container-form .img-form .top-logo {
+    width: 370px;
+    height: 110px;
+}
+.container-form .form {
+    position: absolute;
+    bottom: 176px;
+    flex-direction: column;
+    display: flex;
+
+
+}
+.input-email {
+    width: 540px;
+    height: 60px;
+    border-radius: 12px;
+    margin-left: 50px;
+}
+.input-senha {
+    width: 540px;
+    height: 60px;
+    border-radius: 12px;
+    margin-left: 50px;
+}
+label {
+    margin-left: 50px;
+    font-size: 24px;
+}
+.send {
+    position: absolute;
+    width: 570px;
+    bottom: 0px;
+    top: 275px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: 
+    #33BB69;
+    left: 40px;
+}
+.send:hover {
+    background-color: rgb(19, 214, 19);
+    transition: all ease-in-out 0,3s;
+    
+}
+
+/***********************
+ESTILOS ESCOLHA DO FILME
+***********************/
+
+.content-movie {
+    background-image: url("../pictures/bg-joker.png");
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+    
+}
+.sinopse {
+    display: flex;
+
+}
+.container-sinopse .logo-joker {
+    width: 199px;
+    height: 75px;
+    left: 122px;
+}
+.container-sinopse .topo-joker {
+    display: flex;
+    margin-top: 32px;
+    margin-left: 120px;
+
+}
+
+.star-div {
+    margin-left: 124px;
+
+}
+.star-div.star {
+    width: 8.33%;
+    height: 8.33% ;
+    
+}
+.sinopse-text {
+    margin-top: 36px ;
+    display: flex;
+    height: 84px;
+    width: 600px;
+    margin-left: 122px;
+}
+.sinopse-text .content-sinopse {
+    font-size: 18px;
+    color: #000000;
+}
+.movie-trailer {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+h6 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 16px;
+    font-size: 36px;
+    margin-left: -470px;
+}
+
+/***************************
+MEDIA QUERIES
+**************************/
+
+@media (max-width: 550px){
+    .header .menu {
+        display:none;
+    }
+   .menu-hamburguer {
+        position: absolute;
+        display: block;
+        right: 30px;
+        top: 34px;
+        bottom: 34px;
+    }
+    
+}
+@media (max-width: 500px){
+    .home {
+        object-fit: contain;
+        background-size: cover;
+    }
+    .btn {
+    display: flex;
+    margin-top: 30px;
+    width: 250px;
+    height: 70px;
+    border: 1px solid #33BB69;
+    border-radius: 12px;
+    background: rgba(51, 187, 105, 0.05);
+    }
+    
+    .container .card {
+        width: fit-content;
+    }
+    h5 {
+        text-align: center;
+    }
+    .logo{
+        position: absolute;
+        left: 20px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 30px;
+    }
+    .itens h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    }
+}
+@media (max-width: 710px) {
+    .sinopse-text{
+    margin-top: 36px;
+    display: flex;
+    height: 84px;
+    width: 600px;
+    margin-left: 20px;
+    text-overflow: clip;
+    object-fit: contain;
+    }
+
+    .container-sinopse .logo-joker {
+        width: 199px;
+        height: 75px;
+        left: 20px;
+    }
+    .container-sinopse .topo-joker {
+        display: flex;
+        margin-top: 32px;
+        margin-left: 20px;
+    
+    }
+    .star-div {
+        margin-left: 20px;
+    
+    }
+    h6{
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+}
+@media(max-width: 620px){
+    .sinopse-text{
+        margin-top: 36px;
+        display: flex;
+        height: 84px;
+        width: 300px;
+        margin-left: 20px;
+        text-overflow: clip;
+        object-fit: contain;
+        margin-bottom: 100px;
+
+        }
+        .sinopse-text .content-sinopse {
+            text-overflow: clip;
+            text-overflow: ellipsis;
+        }
+
+        .header .menu {
+            display: none;
+        }
+       .movie-trailer {
+            display: flex;
+            text-align: center;
+            margin-bottom: 32px;
+            
+        }
+        .width-movie {
+            width: 300px;
+            text-align: center; 
+        }
+}
