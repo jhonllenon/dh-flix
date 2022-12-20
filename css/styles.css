@@ -499,8 +499,9 @@ MEDIA QUERIES
             
         }
         .width-movie {
-            width: 300px;
+            width: 350px;
             text-align: center; 
+            margin-left: 10px;
         }
         .container .card .image-movie {
         width: 375px;
