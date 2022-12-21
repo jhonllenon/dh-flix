@@ -502,10 +502,10 @@ MEDIA QUERIES
         .width-movie {
             width: 350px;
             text-align: center; 
-            margin-left: 10px;
+            margin-left: 5px;
         }
         .container .card .image-movie {
-        width: 375px;
+        width: 350px;
         height: 510px;
         object-fit: cover;
         border-radius: 12px;
@@ -519,7 +519,7 @@ MEDIA QUERIES
         border-top-left-radius: 12px;
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
-        width: 375px;
+        width: 350px;
         height: 270px;
         text-overflow: ellipsis;
         overflow: hidden;
